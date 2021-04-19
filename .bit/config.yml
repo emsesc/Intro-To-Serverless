@@ -98,27 +98,9 @@ steps:
       stepType: checks
       actions:
         - type: respond
-          with: 2.10.1-Week 2 Step 10.md
-          files: ['n/a']
-          scripts: test.parseimage.js
-    - title: 'Week 2: Week 2 Step 10'
-      description: '📝 Week 2 Livestream Feedback'
-      event: issue_comment.created
-      stepType: IssueComment
-      actions:
-        - type: respond
-          with: 2.11-Week 2 Step 11.md
-          files: ['n/a']
-          scripts: n/a
-    - title: 'Week 2: Week 2 Step 11'
-      description: 'The Blog'
-      event: issue_comment.created
-      stepType: IssueComment
-      actions:
-        - type: respond
           with: 2.2-Week 2 Step 2.md
           files: ['n/a']
-          scripts: n/a
+          scripts: test.parseimage.js
     - title: 'Week 2: Week 2 Step 2'
       description: 'Checkpoint #1'
       event: issue_comment.created
@@ -184,6 +166,24 @@ steps:
           scripts: n/a
     - title: 'Week 2: Week 2 Step 9'
       description: 'Calling the Twillio API'
+      event: issue_comment.created
+      stepType: IssueComment
+      actions:
+        - type: respond
+          with: 2.a10-Week 2 Step 10.md
+          files: ['n/a']
+          scripts: n/a
+    - title: 'Week 2: Week 2 Step 10'
+      description: '📝 Week 2 Livestream Feedback'
+      event: issue_comment.created
+      stepType: IssueComment
+      actions:
+        - type: respond
+          with: 2.a11-Week 2 Step 11.md
+          files: ['n/a']
+          scripts: n/a
+    - title: 'Week 2: Week 2 Step 11'
+      description: 'The Blog'
       event: issue_comment.created
       stepType: IssueComment
       actions:
