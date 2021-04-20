@@ -121,12 +121,12 @@ steps:
           scripts: test.secrets2.js
     - title: 'Week 2: Week 2 Step 4'
       description: 'Call the Face API P1: Setting [Params](https://idratherbewriting.com/learnapidoc/docapis_doc_parameters.html)'
-      event: issue_comment.created
-      stepType: IssueComment
+      event: pull_request.closed
+      stepType: PRmerge
       actions:
         - type: respond
           with: 2.5-Week 2 Step 5.md
-          files: ['n/a']
+          files: ['index.js']
           scripts: n/a
     - title: 'Week 2: Week 2 Step 5'
       description: 'Call the Face API P2: Using Fetch'
@@ -166,12 +166,12 @@ steps:
           scripts: n/a
     - title: 'Week 2: Week 2 Step 9'
       description: 'Calling the Twillio API'
-      event: issue_comment.created
-      stepType: IssueComment
+      event: pull_request.closed
+      stepType: PRmerge
       actions:
         - type: respond
           with: 2.a10-Week 2 Step 10.md
-          files: ['n/a']
+          files: ['index.js']
           scripts: n/a
     - title: 'Week 2: Week 2 Step 10'
       description: '📝 Week 2 Livestream Feedback'
