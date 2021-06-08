@@ -21,3 +21,13 @@ jobs:
         id: vars
         run: echo ::set-output name=count::$(cat ./.bit/.progress)
 
+      - name: Step 1
+        if: ${{steps.vars.outputs.count == 33 && github.event.head_commit.message != 'Update progress'}}
+        run: |
+          node .bit/tests/test.5.1.js
+
+      - name: Step 4
+        if: ${{steps.vars.outputs.count == 36 && github.event.head_commit.message != 'Update progress'}}
+        run: |
+          node .bit/tests/test.5.4.js
+

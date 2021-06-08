@@ -21,3 +21,33 @@ jobs:
         id: vars
         run: echo ::set-output name=count::$(cat ./.bit/.progress)
 
+      - name: Step 1
+        if: ${{steps.vars.outputs.count == 26 && github.event.head_commit.message != 'Update progress'}}
+        run: |
+          node .bit/tests/4.1.spec.js
+
+      - name: Step 2
+        if: ${{steps.vars.outputs.count == 27 && github.event.head_commit.message != 'Update progress'}}
+        run: |
+          node .bit/tests/4.2.spec.js
+
+      - name: Step 4
+        if: ${{steps.vars.outputs.count == 29 && github.event.head_commit.message != 'Update progress'}}
+        run: |
+          node .bit/tests/4.4.spec.js
+
+      - name: Step 5
+        if: ${{steps.vars.outputs.count == 30 && github.event.head_commit.message != 'Update progress'}}
+        run: |
+          node .bit/tests/4.5.spec.js
+
+      - name: Step 6
+        if: ${{steps.vars.outputs.count == 31 && github.event.head_commit.message != 'Update progress'}}
+        run: |
+          node .bit/tests/4.6.spec.js
+
+      - name: Step 7
+        if: ${{steps.vars.outputs.count == 32 && github.event.head_commit.message != 'Update progress'}}
+        run: |
+          node .bit/tests/4.7.spec.js
+
