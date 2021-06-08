@@ -273,7 +273,7 @@ steps:
         - type: respond
           with: 3-complete.md
         - type: createIssue
-          title: 'Building Bunnimage: The Frontend'
+          title: Week 4
           body: 4.1-Week 4 Step 1.md
         - type: closeIssue
     - title: 'Week 4: Adding an Event Handler to your HTML Form!'
@@ -309,13 +309,9 @@ steps:
       stepType: checks
       actions:
         - type: respond
-          with: bunnimage.md
+          with: 4.5-Week 4 Step 5.md
           files: ['n/a']
           scripts: 4.4.spec.js
-        - type: createIssue
-          title: 'Showing off your twoCatz API'
-          body: 4.5-Week 4 Step 5.md
-        - type: closeIssue
     - title: 'Week 4: Create the CataaS Website ~ meow'
       description: '✅  Task:'
       event: workflow_run.completed
