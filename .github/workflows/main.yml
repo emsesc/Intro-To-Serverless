@@ -2,7 +2,7 @@ name: Syncing Your Cabin
 on:
   push:
     branches:
-      - null
+      - week4-config
 
 jobs:
 
